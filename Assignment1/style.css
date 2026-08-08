@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "Trebuchet MS", sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Main card */
+.card {
+    width: 420px;
+    background: #ffffff;
+    border-radius: 25px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* Header */
+.card-header {
+    background: linear-gradient(135deg, #ff512f, #dd2476) !important;
+    color: white !important;
+    padding: 25px;
+    text-align: center;
+    border-radius: 0 !important;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+
+/* Body */
+.card-body {
+    padding: 35px;
+    color: #333;
+}
+
+.card-body h3 {
+    color: #dd2476;
+    font-weight: bold;
+}
+
+.card-body p {
+    color: #666;
+    font-size: 17px;
+}
+
+
+/* Button */
+.btn-success {
+    background: linear-gradient(135deg, #11998e, #38ef7d) !important;
+    border: none !important;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.btn-success:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(56,239,125,0.4);
+}
+
+
+/* Inputs for login page */
+input {
+    height: 48px;
+    border-radius: 12px !important;
+    border: 2px solid #ddd !important;
+    padding-left: 15px;
+}
+
+
+input:focus {
+    border-color: #dd2476 !important;
+    box-shadow: 0 0 10px rgba(221,36,118,0.3) !important;
+}
+
+
+/* Alerts */
+.alert {
+    border-radius: 12px;
+}
