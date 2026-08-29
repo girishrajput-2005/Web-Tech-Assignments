@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VIT Semester Result</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="top-header">
+
+    <div class="brand">
+        <div class="brand-logo">VIT</div>
+
+        <div>
+            <h1>VIT Semester Result</h1>
+            <p>Student Result Management System</p>
+        </div>
+    </div>
+
+</header>
+
+
+<main class="container">
+
+    <!-- Student Details -->
+
+    <section class="card">
+
+        <div class="section-title">
+            <h2>Student Details</h2>
+            <p>Enter the student's semester information</p>
+        </div>
+
+        <div class="form-grid">
+
+            <div class="form-group">
+                <label for="prn">PRN</label>
+
+                <input
+                    type="text"
+                    id="prn"
+                    placeholder="Enter PRN"
+                    required
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="studentName">Student Name</label>
+
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Enter student name"
+                    required
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="branch">Branch</label>
+
+                <select id="branch">
+
+                    <option value="">Select Branch</option>
+
+                    <option value="Computer Engineering">
+                        Computer Engineering
+                    </option>
+
+                    <option value="Information Technology">
+                        Information Technology
+                    </option>
+
+                    <option value="Artificial Intelligence and Data Science">
+                        Artificial Intelligence and Data Science
+                    </option>
+
+                    <option value="Electronics and Telecommunication">
+                        Electronics and Telecommunication
+                    </option>
+
+                    <option value="Mechanical Engineering">
+                        Mechanical Engineering
+                    </option>
+
+                    <option value="Civil Engineering">
+                        Civil Engineering
+                    </option>
+
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label for="semester">Semester</label>
+
+                <select id="semester">
+
+                    <option value="">Select Semester</option>
+
+                    <option value="1">Semester 1</option>
+                    <option value="2">Semester 2</option>
+                    <option value="3">Semester 3</option>
+                    <option value="4">Semester 4</option>
+                    <option value="5">Semester 5</option>
+                    <option value="6">Semester 6</option>
+                    <option value="7">Semester 7</option>
+                    <option value="8">Semester 8</option>
+
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label for="academicYear">
+                    Academic Year
+                </label>
+
+                <input
+                    type="text"
+                    id="academicYear"
+                    placeholder="Example: 2026-27"
+                    required
+                >
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Subject Details -->
+
+    <section class="card">
+
+        <div class="section-title">
+
+            <h2>Subject Marks</h2>
+
+            <p>
+                SEE = 30 Marks &nbsp; | &nbsp;
+                ESE = 70 Marks
+            </p>
+
+        </div>
+
+
+        <div class="subjects-grid">
+
+            <!-- Subject 1 -->
+
+            <div class="subject-card">
+
+                <div class="subject-number">
+                    01
+                </div>
+
+                <h3>Subject 1</h3>
+
+                <div class="form-group">
+
+                    <label for="subject1Name">
+                        Subject Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="subject1Name"
+                        placeholder="Example: Data Structures"
+                    >
+
+                </div>
+
+
+                <div class="marks-grid">
+
+                    <div class="form-group">
+
+                        <label for="subject1See">
+                            SEE / 30
+                        </label>
+
+                        <input
+                            type="number"
+                            id="subject1See"
+                            min="0"
+                            max="30"
+                            placeholder="0 - 30"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject1Ese">
+                            ESE / 70
+                        </label>
+
+                        <input
+                            type="number"
+                            id="subject1Ese"
+                            min="0"
+                            max="70"
+                            placeholder="0 - 70"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Subject 2 -->
+
+            <div class="subject-card">
+
+                <div class="subject-number">
+                    02
+                </div>
+
+                <h3>Subject 2</h3>
+
+                <div class="form-group">
+
+                    <label for="subject2Name">
+                        Subject Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="subject2Name"
+                        placeholder="Example: DBMS"
+                    >
+
+                </div>
+
+
+                <div class="marks-grid">
+
+                    <div class="form-group">
+
+                        <label for="subject2See">
+                            SEE / 30
+                        </label>
+
+                        <input
+                            type="number"
+                            id="subject2See"
+                            min="0"
+                            max="30"
+                            placeholder="0 - 30"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject2Ese">
+                            ESE / 70
+                        </label>
+
+                        <input
+                            type="number"
+                            id="subject2Ese"
+                            min="0"
+                            max="70"
+                            placeholder="0 - 70"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Subject 3 -->
+
+            <div class="subject-card">
+
+                <div class="subject-number">
+                    03
+                </div>
+
+                <h3>Subject 3</h3>
+
+                <div class="form-group">
+
+                    <label for="subject3Name">
+                        Subject Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="subject3Name"
+                        placeholder="Example: Operating Systems"
+                    >
+
+                </div>
+
+
+                <div class="marks-grid">
+
+                    <div class="form-group">
+
+                        <label for="subject3See">
+                            SEE / 30
+                        </label>
+
+                        <input
+                            type="number"
+                            id="subject3See"
+                            min="0"
+                            max="30"
+                            placeholder="0 - 30"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject3Ese">
+                            ESE / 70
+                        </label>
+
+                        <input
+                            type="number"
+                            id="subject3Ese"
+                            min="0"
+                            max="70"
+                            placeholder="0 - 70"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Subject 4 -->
+
+            <div class="subject-card">
+
+                <div class="subject-number">
+                    04
+                </div>
+
+                <h3>Subject 4</h3>
+
+                <div class="form-group">
+
+                    <label for="subject4Name">
+                        Subject Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="subject4Name"
+                        placeholder="Example: Computer Networks"
+                    >
+
+                </div>
+
+
+                <div class="marks-grid">
+
+                    <div class="form-group">
+
+                        <label for="subject4See">
+                            SEE / 30
+                        </label>
+
+                        <input
+                            type="number"
+                            id="subject4See"
+                            min="0"
+                            max="30"
+                            placeholder="0 - 30"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject4Ese">
+                            ESE / 70
+                        </label>
+
+                        <input
+                            type="number"
+                            id="subject4Ese"
+                            min="0"
+                            max="70"
+                            placeholder="0 - 70"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="button-container">
+
+            <button
+                type="button"
+                class="primary-btn"
+                id="calculateBtn"
+            >
+                Calculate & Save Result
+            </button>
+
+            <button
+                type="button"
+                class="secondary-btn"
+                id="resetBtn"
+            >
+                Reset
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Search Result -->
+
+    <section class="card">
+
+        <div class="section-title">
+
+            <h2>Search Result</h2>
+
+            <p>
+                Search a previously saved result using PRN.
+            </p>
+
+        </div>
+
+
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="searchPrn"
+                placeholder="Enter PRN"
+            >
+
+            <button
+                type="button"
+                class="search-btn"
+                id="searchBtn"
+            >
+                Search Result
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Messages -->
+
+    <div id="messageBox" class="message hidden"></div>
+
+
+    <!-- Result -->
+
+    <section
+        class="result-card hidden"
+        id="resultSection"
+    >
+
+        <div class="result-header">
+
+            <div>
+
+                <h2>VIT PUNE</h2>
+
+                <p>
+                    SEMESTER RESULT
+                </p>
+
+            </div>
+
+            <button
+                type="button"
+                class="print-btn"
+                onclick="window.print()"
+            >
+                Print Result
+            </button>
+
+        </div>
+
+
+        <div
+            class="student-summary"
+            id="studentSummary"
+        >
+        </div>
+
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Sr. No.</th>
+                        <th>Subject</th>
+                        <th>SEE / 30</th>
+                        <th>ESE / 70</th>
+                        <th>Total / 100</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="resultTableBody">
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="result-summary">
+
+            <div class="summary-box">
+
+                <span>Grand Total</span>
+
+                <strong id="grandTotal">
+                    -
+                </strong>
+
+                <small>
+                    / 400
+                </small>
+
+            </div>
+
+
+            <div class="summary-box">
+
+                <span>Percentage</span>
+
+                <strong id="percentage">
+                    -
+                </strong>
+
+                <small>%</small>
+
+            </div>
+
+
+            <div class="summary-box">
+
+                <span>Result</span>
+
+                <strong id="resultStatus">
+                    -
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        VIT Semester Result Management System
+    </p>
+
+    <p>
+        Spring Boot &bull; JavaScript &bull; MySQL
+    </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
