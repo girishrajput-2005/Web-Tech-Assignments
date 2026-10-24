@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\wt\backend\src\main\java\com\vit\resultportal\config\DataInitializer.java
+C:\Users\Admin\Desktop\wt\backend\src\main\java\com\vit\resultportal\controller\AuthController.java
+C:\Users\Admin\Desktop\wt\backend\src\main\java\com\vit\resultportal\controller\ResultController.java
+C:\Users\Admin\Desktop\wt\backend\src\main\java\com\vit\resultportal\dto\AuthRequest.java
+C:\Users\Admin\Desktop\wt\backend\src\main\java\com\vit\resultportal\dto\AuthResponse.java
+C:\Users\Admin\Desktop\wt\backend\src\main\java\com\vit\resultportal\model\Role.java
+C:\Users\Admin\Desktop\wt\backend\src\main\java\com\vit\resultportal\model\StudentResult.java
+C:\Users\Admin\Desktop\wt\backend\src\main\java\com\vit\resultportal\model\User.java
+C:\Users\Admin\Desktop\wt\backend\src\main\java\com\vit\resultportal\repository\StudentResultRepository.java
+C:\Users\Admin\Desktop\wt\backend\src\main\java\com\vit\resultportal\repository\UserRepository.java
+C:\Users\Admin\Desktop\wt\backend\src\main\java\com\vit\resultportal\ResultPortalApplication.java
+C:\Users\Admin\Desktop\wt\backend\src\main\java\com\vit\resultportal\security\CustomUserDetailsService.java
+C:\Users\Admin\Desktop\wt\backend\src\main\java\com\vit\resultportal\security\JwtAuthenticationFilter.java
+C:\Users\Admin\Desktop\wt\backend\src\main\java\com\vit\resultportal\security\JwtService.java
+C:\Users\Admin\Desktop\wt\backend\src\main\java\com\vit\resultportal\security\SecurityConfig.java
