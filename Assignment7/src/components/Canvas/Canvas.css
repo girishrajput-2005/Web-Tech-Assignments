@@ -1,0 +1,59 @@
+﻿.canvas-container {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background: #0f0f1a;
+}
+
+.canvas-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: default;
+}
+
+.canvas-svg.mode-draw {
+  cursor: crosshair;
+}
+
+.zoom-indicator {
+  position: absolute;
+  bottom: 12px;
+  right: 14px;
+  background: #1e1e2e;
+  border: 1px solid #313145;
+  color: #64748b;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.draw-mode-badge {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4f46e5;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 20px rgba(79,70,229,0.4);
+  pointer-events: all;
+}
+
+.draw-mode-badge button {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.draw-mode-badge button:hover { background: rgba(255,255,255,0.3); }

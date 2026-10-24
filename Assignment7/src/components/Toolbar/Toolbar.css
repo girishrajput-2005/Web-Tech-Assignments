@@ -1,0 +1,71 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 52px;
+  background: #1e1e2e;
+  border-bottom: 1px solid #313145;
+  padding: 0 16px;
+  flex-shrink: 0;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.toolbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 4px;
+}
+
+.brand-icon { font-size: 20px; color: #7c6af7; }
+.brand-text { font-weight: 700; font-size: 15px; color: #e2e2f0; letter-spacing: 0.3px; }
+
+.toolbar-divider {
+  width: 1px;
+  height: 28px;
+  background: #313145;
+  margin: 0 4px;
+  flex-shrink: 0;
+}
+
+.toolbar-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: #2a2a3e;
+  color: #c8c8e0;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.toolbar-btn:hover { background: #3a3a54; color: #fff; }
+.toolbar-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.toolbar-btn.active { background: #4f46e5; color: #fff; border-color: #6366f1; }
+.toolbar-btn.primary { background: #4f46e5; color: #fff; border-color: #6366f1; }
+.toolbar-btn.primary:hover { background: #4338ca; }
+.toolbar-btn.sample { background: #064e3b; color: #6ee7b7; border-color: #065f46; }
+.toolbar-btn.sample:hover { background: #065f46; }
+.toolbar-btn.import { background: #1e1b4b; color: #a5b4fc; border-color: #312e81; }
+.toolbar-btn.import:hover { background: #2e27a0; }
+.toolbar-btn.danger { background: #2a2a3e; color: #f87171; border-color: transparent; }
+.toolbar-btn.danger:hover { background: #3f1f1f; }
+
+.toolbar-btn.icon-btn { padding: 6px 10px; font-size: 16px; }
+
+.rel-type-select {
+  background: #2a2a3e;
+  color: #c8c8e0;
+  border: 1px solid #4f46e5;
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  outline: none;
+}
+.rel-type-select:focus { border-color: #7c6af7; }

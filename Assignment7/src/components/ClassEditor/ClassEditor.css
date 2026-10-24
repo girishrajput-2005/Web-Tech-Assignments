@@ -1,0 +1,207 @@
+﻿.class-editor {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+  background: #13131f;
+  color: #c8c8e0;
+  font-size: 13px;
+}
+
+.editor-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 16px 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #e2e2f0;
+  border-bottom: 1px solid #1e1e2e;
+  background: #1a1a2a;
+  flex-shrink: 0;
+}
+
+.editor-section {
+  padding: 12px 14px 8px;
+  border-bottom: 1px solid #1a1a2a;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.field-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 7px;
+}
+
+.editor-input {
+  background: #1e1e2e;
+  border: 1px solid #2a2a3e;
+  border-radius: 5px;
+  color: #c8c8e0;
+  font-size: 12.5px;
+  padding: 5px 8px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.15s;
+}
+.editor-input:focus { border-color: #4f46e5; }
+.editor-input.flex1 { flex: 1; min-width: 60px; }
+.editor-input.w80 { width: 80px; flex-shrink: 0; }
+.editor-input.w70 { width: 70px; flex-shrink: 0; }
+
+.member-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.vis-select {
+  background: #1e1e2e;
+  border: 1px solid #2a2a3e;
+  border-radius: 5px;
+  color: #94a3b8;
+  font-size: 12px;
+  padding: 5px 4px;
+  width: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 3px 5px;
+  border-radius: 4px;
+  line-height: 1;
+}
+.remove-btn:hover { color: #f87171; background: #2a1515; }
+
+.add-btn {
+  background: #1e1e2e;
+  border: 1px solid #2a2a3e;
+  border-radius: 5px;
+  color: #7c6af7;
+  font-size: 11.5px;
+  padding: 4px 9px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.add-btn:hover { background: #2a2a3e; }
+.add-btn.small { font-size: 11px; padding: 3px 7px; }
+
+.btn-group {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.btn-group-btn {
+  background: #1e1e2e;
+  border: 1px solid #2a2a3e;
+  border-radius: 5px;
+  color: #94a3b8;
+  font-size: 11px;
+  padding: 4px 9px;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.12s;
+}
+.btn-group-btn:hover { border-color: #4f46e5; color: #c8c8e0; }
+.btn-group-btn.active { background: #4f46e5; color: #fff; border-color: #6366f1; }
+
+.abs-btn {
+  background: transparent;
+  border: 1px solid #2a2a3e;
+  border-radius: 4px;
+  color: #64748b;
+  font-size: 10px;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+.abs-btn.active { background: #7c3aed; color: #fff; border-color: #7c3aed; }
+
+.icon-btn-sm {
+  background: transparent;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 11px;
+  padding: 3px 5px;
+}
+.icon-btn-sm:hover { color: #c8c8e0; }
+
+.method-block { margin-bottom: 6px; }
+
+.params-section {
+  background: #0f0f1a;
+  border-radius: 5px;
+  padding: 8px 10px;
+  margin-top: 3px;
+  margin-left: 16px;
+  border-left: 2px solid #4f46e5;
+}
+.params-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  font-size: 11px;
+  color: #64748b;
+}
+
+.empty-hint {
+  color: #444460;
+  font-size: 12px;
+  font-style: italic;
+  margin: 4px 0 8px;
+}
+
+/* Empty state */
+.class-editor.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+  color: #444460;
+}
+.empty-icon { font-size: 36px; opacity: 0.3; }
+.empty-state p { font-size: 13px; line-height: 1.6; }
+
+.tips {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  margin-top: 8px;
+}
+.tip {
+  font-size: 11px;
+  color: #3a3a54;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+kbd {
+  background: #1e1e2e;
+  border: 1px solid #313145;
+  border-radius: 3px;
+  padding: 1px 5px;
+  font-size: 10px;
+  color: #64748b;
+}
